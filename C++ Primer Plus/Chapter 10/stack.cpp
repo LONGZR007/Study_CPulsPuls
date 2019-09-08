@@ -1,8 +1,15 @@
 // stack.cpp -- Stack member functions
 #include "stack.h"
-Stack::Stack()    // create an empty stack
+Stack::Stack(Item maxx)    // create an empty stack
 {
     top = 0;
+	MAX = maxx;
+	items = new Item[MAX];
+}
+
+Stack::~Stack()
+{
+	delete [] items;
 }
 
 bool Stack::isempty() const

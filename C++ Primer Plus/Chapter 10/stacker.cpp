@@ -5,7 +5,7 @@
 int main()
 {
     using namespace std;
-    Stack st; // create an empty stack
+    Stack st(2); // create an empty stack
     char ch;
     unsigned long po;
     cout << "Please enter A to add a purchase order,\n"
